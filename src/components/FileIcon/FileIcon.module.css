@@ -1,0 +1,66 @@
+.fileIcon {
+    position: absolute;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.fileIcon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fileIcon:active {
+    background-color: rgba(0, 0, 100, 0.3);
+}
+
+.iconGraphic {
+    width: 50px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Ensure image stays within bounds */
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fileCorner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #e0e0e0 transparent transparent;
+}
+
+.typeLabel {
+    font-size: 10px;
+    color: #888;
+    font-weight: bold;
+}
+
+.fileName {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    word-wrap: break-word;
+    line-height: 1.2;
+}
