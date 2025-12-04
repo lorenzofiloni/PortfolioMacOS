@@ -1,5 +1,6 @@
 import sampleProject from '../assets/images/sample-project.png';
-import LuxusBrauchtLasttiere from '../assets/images/Luxus-braucht-Lasttiere.png';
+import LuxusBrauchtLasttiere from '../assets/images/Luxus braucht Lasttiere.png';
+import ArmeBildBG from '../assets/images/Arme Bild BG Kopie.png';
 
 export const apps = [
     { id: 'finder', name: 'Finder', icon: 'finder' },
@@ -61,6 +62,29 @@ export const files = [
         ),
         position: {
             x: 300, y: 400
+
+        }
+    },
+    {
+        id: 'BG-Project 2',
+        name: 'Arme Bild BG.png',
+        type: "folder",
+        previewImage: ArmeBildBG,
+        content: (
+            <div style={{ padding: "10px" }}>
+                <h2 style={{ marginTop: 0, color: "#333" }}>Arme Bild BG</h2>
+                <div style={{ marginBottom: "20px" }}>
+                    <h3 style={{ color: "#555" }}>Project 2</h3>
+                    <img src={ArmeBildBG} alt="Arme Bild BG" style={{ width: "70%", borderRadius: "8px", marginBottom: "10px" }}
+                    />
+                    <p style={{ color: "#666" }}>
+                        This is the seconde Artwork of a series of artworkes realated to the theme of "Poorness".
+                    </p>
+                </div>
+            </div>
+        ),
+        position: {
+            x: 200, y: 200
 
         }
     },
